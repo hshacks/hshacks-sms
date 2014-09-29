@@ -3,8 +3,8 @@ require 'csv'
 require 'twilio-ruby'
 
 # put your own credentials here
-account_sid = 'AC4adec58f8d48fb0ea9b78a447610fd6b'
-auth_token = '2392fad532397ce9f4eb9ad1083f30a4'
+account_sid = 'xxx'
+auth_token = 'xxx'
 
 @client = Twilio::REST::Client.new account_sid, auth_token
 CSV.foreach("checkin.csv") do |row|
